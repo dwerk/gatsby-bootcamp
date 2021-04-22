@@ -32,7 +32,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCES_TOKEN
       }
     },
-    'gatsby-plugin-sass',
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -41,5 +40,14 @@ module.exports = {
       }
     },
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
+    'gatsby-plugin-scss-typescript',
   ],
 }
