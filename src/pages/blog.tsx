@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/global/layout/layout"
 import Seo from "../components/global/seo"
-import Posts from "../components/posts/posts"
+import Posts from "../components/posts/Posts"
 
 import "./blog.css"
 
